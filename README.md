@@ -2,7 +2,7 @@
 
 ## About this Repository
 
-The goal of this repository is to use the data provided by Quanam to construct a model that allows forecasting the future conditions of a room, based on the analysis of past data. Also, the model will need to be able to predict the heart rate of patients in the room wearing the wristband, based on environmental conditions.
+The goal of this repository is to use the data provided by Quanam to construct a model that allows the forecasting of future conditions of a room, based on the analysis of past data. Also, the model will need to be able to predict the heart rate of patients in the room wearing the wristband, based on environmental conditions.
 
 ### Finished at 21st Place - R2 score: 0.21
 
