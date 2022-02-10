@@ -1,0 +1,112 @@
+thisdict =	{
+  "room": "garden",
+  "values": {
+    "co2": 700,
+    "temperature": 23,
+    "humidity": 49,
+    "sound": 40,
+    "illumination": 751
+  }
+}
+
+def main(dict):
+    ls = []
+    alerts = {"alerts": None}
+
+    if dict.get("room") == "activity-room":
+        if dict["values"].get("co2") > 500:
+            ls.append("co2")
+        if (
+            dict["values"].get("temperature") < 19
+            or dict["values"].get("temperature") > 22
+        ):
+            ls.append("temperature")
+        if (
+            dict["values"].get("humidity") < 50
+            or dict["values"].get("humidity") > 60
+        ):
+            ls.append("humidity")
+        if dict["values"].get("sound") < 0 or dict["values"].get("sound") > 40:
+            ls.append("sound")
+        if dict["values"].get("illumination") < 300 or dict["values"].get("illumination") > 750:
+            ls.append("illumination")
+    alerts["alerts"] = ls
+
+    if dict.get("room") == "refectory":
+        if dict["values"].get("co2") > 400:
+            ls.append("co2")
+        if (
+            dict["values"].get("temperature") < 20
+            or dict["values"].get("temperature") > 23
+        ):
+            ls.append("temperature")
+        if (
+            dict["values"].get("humidity") < 50
+            or dict["values"].get("humidity") > 70
+        ):
+            ls.append("humidity")
+        if dict["values"].get("sound") < 20 or dict["values"].get("sound") > 35:
+            ls.append("sound")
+        if dict["values"].get("illumination") < 200 or dict["values"].get("illumination") > 500:
+            ls.append("illumination")
+    alerts["alerts"] = ls
+    
+    if dict.get("room") == "room-1":
+        if dict["values"].get("co2") > 300:
+            ls.append("co2")
+        if (
+            dict["values"].get("temperature") < 21
+            or dict["values"].get("temperature") > 23
+        ):
+            ls.append("temperature")
+        if (
+            dict["values"].get("humidity") < 50
+            or dict["values"].get("humidity") > 60
+        ):
+            ls.append("humidity")
+        if dict["values"].get("sound") < 10 or dict["values"].get("sound") > 30:
+            ls.append("sound")
+        if dict["values"].get("illumination") < 100 or dict["values"].get("illumination") > 200:
+            ls.append("illumination")
+    alerts["alerts"] = ls    
+    
+    if dict.get("room") == "bathroom-main":
+        if dict["values"].get("co2") > 500:
+            ls.append("co2")
+        if (
+            dict["values"].get("temperature") < 22
+            or dict["values"].get("temperature") > 25
+        ):
+            ls.append("temperature")
+        if (
+            dict["values"].get("humidity") < 60
+            or dict["values"].get("humidity") > 75
+        ):
+            ls.append("humidity")
+        if dict["values"].get("sound") < 20 or dict["values"].get("sound") > 35:
+            ls.append("sound")
+        if dict["values"].get("illumination") < 100 or dict["values"].get("illumination") > 200:
+            ls.append("illumination")
+    alerts["alerts"] = ls       
+    
+    if dict.get("room") == "garden":
+        if dict["values"].get("co2") > 500:
+            ls.append("co2")
+        if (
+            dict["values"].get("temperature") < 15
+            or dict["values"].get("temperature") > 22
+        ):
+            ls.append("temperature")
+        if (
+            dict["values"].get("humidity") < 50
+            or dict["values"].get("humidity") > 80
+        ):
+            ls.append("humidity")
+        if dict["values"].get("sound") < 10 or dict["values"].get("sound") > 35:
+            ls.append("sound")
+    alerts["alerts"] = ls     
+    
+    return alerts
+
+
+print(main(thisdict))
