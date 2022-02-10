@@ -1,4 +1,4 @@
-![]()
+![](https://github.com/jorgerodriguezm/HeartRatePredictionQuanam/blob/main/Assets/background.png)
 
 ## About this Repository
 
@@ -8,7 +8,7 @@ The goal of this repository is to use the data provided by Quanam to construct a
 
 ### Model in this Repository:
 
-- [Heart Rate Prediction_Quanam]()
+- [Heart Rate Prediction_Quanam](https://github.com/jorgerodriguezm/HeartRatePredictionQuanam/blob/main/Model/Quanam_Sensor.ipynb)
 
 ### Desafío 02 | Quanam
 
