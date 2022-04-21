@@ -14,6 +14,10 @@ The goal of this repository is to use the data provided by Quanam to construct a
 
 - [Quanam Sensors](https://github.com/jorgerodriguezm/HeartRatePredictionQuanam/tree/main/IoT)
 
+### Certificado
+
+![](https://github.com/jorgerodriguezm/HeartRatePredictionQuanam/blob/main/Assets/Certificado_Desafio%202.png)
+
 ## Desafío 02 | Quanam
 
 [![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://cloud.ibm.com)
